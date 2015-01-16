@@ -11,9 +11,7 @@ from OpenGL.GLUT import *
 
 TRACE = True
 DEBUG = False
-
-class example(object):
-	def main():
+def main():
 	"""OpenGL立体データを読み込んで描画する。"""
 	if TRACE: print __name__, main.__doc__
 
