@@ -12,8 +12,8 @@ NAME = Boidies
 DATA = dragon.txt wasp.txt bunny.ply penguin.txt oni.txt baby.txt
 
 all:
-	@if[ ! -e $(PYOPENGL) ]; then unzip $(PYOPENGL).zip ; fi
-	@if[ ! -e $(PENGL)]; then ln -s $(PYOPENGL)/$(OPENGL) $(OPENGL) ; fi
+	@if [ ! -e $(PYOPENGL) ] ; then unzip $(PYOPENGL).zip ; fi
+	@if [ ! -e $(PENGL) ] ; then ln -s $(PYOPENGL)/$(OPENGL) $(OPENGL) ; fi
 
 clean:
 	@for each in ${PYCS} ; do echo "rm -f $${each}" ; rm -f $${each} ; done
@@ -28,7 +28,7 @@ test: all
 	$(PYTHON) $(TARGET)
 
 innstall: all
-	if[! -e $(INSTDIR)] ; then mkdir $(INSTDIR) ; fi
+	if[ ! -e $(INSTDIR) ] ; then mkdir $(INSTDIR) ; fi
 	cp -p -r $(TARGET) jp $(INSTDIR)
 	cp -R -L $(OPENGL) $(INSTDIR)
 
