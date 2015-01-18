@@ -8,7 +8,14 @@ import urllib
 from OpenGL.GL import *
 from OpenGL.GLU import *
 from OpenGL.GLUT import *
-from Bodies import *
+from Bodies import Dragon
+from Bodies import Baby
+from Bodies import Bunny
+from Bodies import Oni
+from Bodies import Penguin
+from Bodies import Wasp
+
+
 
 TRACE = True
 DEBUG = False
