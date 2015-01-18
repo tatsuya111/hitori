@@ -13,7 +13,7 @@ DATA = dragon.txt wasp.txt bunny.ply penguin.txt oni.txt baby.txt
 
 all:
 	@if [ ! -e $(PYOPENGL) ] ; then unzip $(PYOPENGL).zip ; fi
-	@if [ ! -e $(PENGL) ] ; then ln -s $(PYOPENGL)/$(OPENGL) $(OPENGL) ; fi
+	@if [ ! -e $(OPENGL) ] ; then ln -s $(PYOPENGL)/$(OPENGL) $(OPENGL) ; fi
 
 clean:
 	@for each in ${PYCS} ; do echo "rm -f $${each}" ; rm -f $${each} ; done
