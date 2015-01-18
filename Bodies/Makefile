@@ -21,8 +21,8 @@ clean:
 	rm -f MANIFEST $(DATA)
 
 wipe:
-	if[ -e $(OPENGL)] ; then rm -f $(OPENGL) ; fi
-	if[ -e $(PYOPENGL)] ; then rm -f -r $(PYOPENGL) ; fi
+	if [ -e $(OPENGL) ] ; then rm -f $(OPENGL) ; fi
+	if [ -e $(PYOPENGL) ] ; then rm -f -r $(PYOPENGL) ; fi
 
 test: all
 	$(PYTHON) $(TARGET)
