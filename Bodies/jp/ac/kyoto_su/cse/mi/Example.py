@@ -8,12 +8,12 @@ import urllib
 from OpenGL.GL import *
 from OpenGL.GLU import *
 from OpenGL.GLUT import *
-from Bodies import Dragon
-from Bodies import Baby
-from Bodies import Bunny
-from Bodies import Oni
-from Bodies import Penguin
-from Bodies import Wasp
+from Bodies.Dragon import DragonModel
+from Bodies.Baby import BabyModel
+from Bodies.Bunny import BunnyModel
+from Bodies.Oni import OniModel
+from Bodies.Penguin import PenguinModel
+from Bodies.Wasp import WaspModel
 
 
 

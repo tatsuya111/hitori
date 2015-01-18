@@ -8,6 +8,9 @@ import urllib
 from OpenGL.GL import *
 from OpenGL.GLU import *
 from OpenGL.GLUT import *
+from Projection import OpenGLProjection
+from View import OpenGLView
+from Controlle import OpenGLController
 
 TRACE = True
 DEBUG = False

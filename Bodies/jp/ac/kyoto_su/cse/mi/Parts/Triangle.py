@@ -8,6 +8,7 @@ import urllib
 from OpenGL.GL import *
 from OpenGL.GLU import *
 from OpenGL.GLUT import *
+from Object import OpenGLObject
 
 TRACE = True
 DEBUG = False

@@ -8,6 +8,9 @@ import urllib
 from OpenGL.GL import *
 from OpenGL.GLU import *
 from OpenGL.GLUT import *
+from ..MVC.Model import OpenGLModel
+from ..Parts.Polygon import OpenGLPolygon
+
 
 TRACE = True
 DEBUG = False

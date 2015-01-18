@@ -8,6 +8,8 @@ import urllib
 from OpenGL.GL import *
 from OpenGL.GLU import *
 from OpenGL.GLUT import *
+from ..MVC.Model import OpenGLModel
+from ..Parts.Triangle import OpenGLTriangle
 
 TRACE = True
 DEBUG = False
