@@ -8,7 +8,7 @@ EXT = py
 TARGET = $(BASE).$(EXT)
 PACKAGE = jp.ac.kyoto_su.cse.mi
 INSTDIR = Bodies.app/Contents/Resources/Python/
-NAME = Boidies
+NAME = Boides
 DATA = dragon.txt wasp.txt bunny.ply penguin.txt oni.txt baby.txt
 
 all:
