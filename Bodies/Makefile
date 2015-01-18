@@ -4,10 +4,10 @@ PYCS = $(shell find . -name "*.pyc")
 PYOPENGL = PyOpenGL-3.0.2
 OPENGL = OpenGL
 BASE = Bodies
-EXE = py
-TARGET = $(BASE).$(EXE)
+EXT = py
+TARGET = $(BASE).$(EXT)
 PACKAGE = jp.ac.kyoto_su.cse.mi
-INSTDIR = Bodies.app/Contents/Resource/Python/
+INSTDIR = Bodies.app/Contents/Resources/Python/
 NAME = Boidies
 DATA = dragon.txt wasp.txt bunny.ply penguin.txt oni.txt baby.txt
 
@@ -28,7 +28,7 @@ test: all
 	$(PYTHON) $(TARGET)
 
 install: all
-	if[ ! -e $(INSTDIR) ] ; then mkdir $(INSTDIR) ; fi
+	if [ ! -e $(INSTDIR) ] ; then mkdir $(INSTDIR) ; fi
 	cp -p -r $(TARGET) jp $(INSTDIR)
 	cp -R -L $(OPENGL) $(INSTDIR)
 
