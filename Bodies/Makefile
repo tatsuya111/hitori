@@ -17,7 +17,7 @@ all:
 
 clean:
 	@for each in ${PYCS} ; do echo "rm -f $${each}" ; rm -f $${each} ; done
-	if [ -e $(INSTDIR)] ; then rm -f -r $(INSTDIR) ; fi
+	if [ -e $(INSTDIR) ] ; then rm -f -r $(INSTDIR) ; fi
 	rm -f MANIFEST $(DATA)
 
 wipe:
